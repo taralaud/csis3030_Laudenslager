@@ -1,0 +1,102 @@
+/*
+  eugene santos
+*/
+
+/* Basic HTML
+--------------------------------------------------------------------*/
+body {
+  margin: 0;
+}
+
+
+/* row
+--------------------------------------------------------------------*/
+.row {
+  /* We add max-width */
+  max-width: 960px;
+  margin: 0 auto;
+  padding-right: 10px;
+  padding-left: 10px;
+  clear: both;
+}
+
+/* Grid - All potential grid containers share these properties. They float, display inline and have a gutter of 10px on both sides.
+--------------------------------------------------------------------*/
+.grid_1,
+.grid_2,
+.grid_3,
+.grid_4,
+.grid_5,
+.grid_6,
+.grid_7,
+.grid_8,
+.grid_9,
+.grid_10,
+.grid_11,
+.grid_12 {
+  float: left;
+  margin: 0 1%;
+  margin: 0 ;
+}
+
+/* Grid - Here it is. Each of these classes can be used to create the column structure of your choice.
+--------------------------------------------------------------------*/
+.grid_1 {
+  width: 6.25%;
+}
+
+.grid_2 {
+  width: 14.58333333%;
+}
+
+.grid_3 {
+  width: 22.916666667%;
+}
+
+.grid_4 {
+  width: 31.25%;
+}
+
+.grid_5 {
+  width: 39.58333333%;
+}
+.grid_6 {
+  width: 47.916666667%;
+}
+
+.grid_7 {
+  width: 56.25%;
+}
+
+.grid_8 {
+  width: 64.5833333%;
+}
+
+.grid_9 {
+  width: 72.9166667%;
+}
+
+.grid_10 {
+  width: 81.25%;
+}
+
+.grid_11 {
+  width: 88.583333%;
+}
+
+.grid_12 {
+  width: 97.9166667%;
+}
+
+/* Clear Floated Elements
+--------------------------------------------------------------------*/
+/* Credit goes to: http://sonspring.com/journal/clearing-floats */
+
+.clear {
+  clear: both;
+  display: block;
+  overflow: hidden;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}

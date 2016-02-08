@@ -1,0 +1,189 @@
+
+/* Basic HTML
+--------------------------------------------------------------------*/
+
+body {
+color:black;
+  font: 16px;
+  font-family: 'Quicksand', sans-serif;
+  text-align:center;
+}
+
+p {
+
+}
+/* Text Styles
+--------------------------------------------------------------------*/
+
+h1 {
+	font-size:56px;
+	font-weight:bold;
+	color:white;
+	font-weight:100;
+	text-transform:uppercase;	
+	text-align:center;
+	font-family: 'Dosis', sans-serif;
+}
+
+
+h2 {
+	font-size:36px;
+	font-weight:bold;
+	color:#039;
+	font-weight:100;
+	text-transform:uppercase;	
+	font-family: 'Dosis', sans-serif;
+}
+
+h3 {
+	font-size:18px;
+	font-weight:bold;
+	color:#039;
+	font-weight:100;
+	text-transform:uppercase;
+	font-family: 'Dosis', sans-serif;
+
+}
+
+
+.container{
+	width: 1000px;
+	
+}
+
+.tagline {
+	font-size:18px;
+	text-transform:uppercase;
+	color:#ddd;
+	margin-top:-50px;
+}
+
+div.one {
+  background-image: url("../img/dd.jpg");
+  height:400px;
+  width:100%;
+  margin-top:20px;
+}
+
+div.two {
+ 	color:#039;
+	font-weight:100;
+	text-transform:uppercase;	
+	font-family: 'Dosis', sans-serif;
+}
+
+
+/* DIVS-listed in the order in which they appear on html
+--------------------------------------------------------------------*/
+#header {
+	background-color:#E4F1C3;
+	overflow:hidden;
+	padding:5px 0;
+	border-style:none;
+	border-bottom-width:1px 0;
+	border-color:#000;
+}
+
+.row{
+	width:960px;
+	margin:0 auto;
+	
+}
+
+#nav {
+	font-family: 'Dosis', sans-serif;
+	
+
+}
+
+#nav ul {
+	text-align:center;
+	
+}
+
+#nav li {
+	display:inline;
+	list-style: none;
+	margin:10px;
+}
+
+#nav li a {
+	display:inline;
+	text-decoration: none;
+	color:#E4F1C3;
+	
+}
+
+#nav li a:hover {
+	color: #09f;
+}
+-
+
+.l {
+	float:left;
+
+}
+
+.r {
+	float:right;
+}
+	
+.w900{
+	width: 900px;
+}
+
+.i {
+	color:black;
+}
+
+.grid_4 , .grid_6 {
+	width:300px;
+	float:left;
+	margin:10px;
+}
+
+a:link {
+	color:#039;
+	text-decoration:none;
+}
+ a:visited {
+ 	color:#E4F1C3;
+ }
+
+ a:active {
+ 	color:black;
+ }
+
+
+/* footer
+--------------------------------------------------------------------*/
+#footer {
+	background-color:#9EBF6D;
+	overflow:hidden;
+	padding:10px 0;
+	border-style:none;
+	border-cotton-width:1px 0;
+	border-color:#9EBF6D;
+	color:white;
+}
+
+#footer ul {
+	text-align:left;
+}
+
+#footer li {
+	list-style:none;
+
+}
+
+#footer li a {
+	text-decoration: none;
+	color: white;
+}
+
+#input {
+	font-size:16px;
+	border:none;
+
+}
+
