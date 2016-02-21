@@ -34,11 +34,15 @@ if ($errormessage != "") {
 	die();
 }
 
-foreach ($_POST as $cart => $quantity) {
+if ($result) {
+         while($row = mysql_fetch_array($result)) {
+          echo "$firstname,$address,$city,$state,$zip";
+        }
 
-echo "Order Summary";
-echo "firstname,address,city,state,zip";
-include("cart_list.php");
+        }
+        else {
+          echo mysql_error();
+        }
 
 
 ?>

@@ -15,7 +15,7 @@
 
 		while ($row = mysqli_fetch_assoc($result)) {
       
-      echo "<input type="text" name="product_1" size="3">";
+    echo "<input type='text' name='snuggie' size='3'>";
 
 		echo $row["product_name"] . "<br />";
 		echo "<img src='images/" . $row["image"] . "'><br /><br />";
@@ -23,6 +23,7 @@
 		}
 
     	?>
+      <input type="submit" value="Submit">
 
     </form>
 

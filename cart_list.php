@@ -21,7 +21,7 @@
 
         if ($result) {
          while($row = mysql_fetch_array($result)) {
-          echo "Product Name: <input type="text" name="" value="">";
+          echo "Product Name: <input type='text' name='snuggie' value='3'>";
         }
 
         }

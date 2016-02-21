@@ -1,14 +1,14 @@
 <?php
 
-if(isset($_SESSION['cart']) && is_array($_SESSION['cart'])) {
-        $totalquantity = 0;
-        foreach($_SESSION['cart'] AS $productId => $itemQuanity) {
-            $totalquantity = $totalquantity + $itemQuanity;
-        }
-  }
-  else {
-       $totalquantity = 0;
-  }
-  echo $totalquantity;
+$results = array(
+  "success" => 1,
+  "errormessage" => "There is no quantity entered"
+);
+
+echo json_encode($results);
+
+
+
+?>
 
   ?>
