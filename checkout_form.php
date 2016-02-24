@@ -16,7 +16,7 @@
       ZIP: <input type="text" name="zip" value="<?php echo htmlspecialchars($_POST["zip"], ENT_QUOTES);?>"><br><br>
 
       
-       <input type="checkout" value="Checkout">
+       <input type="submit" value="Checkout">
     </form>
 
 <?php

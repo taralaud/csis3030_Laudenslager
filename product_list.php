@@ -1,7 +1,6 @@
 <?php
 
 include("global.php");
-include("header.php");
 include("product_detail.php");
 
 $category_id = intval($_GET["category_id"]);

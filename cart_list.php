@@ -2,9 +2,6 @@
   include("global.php");
   include("header.php");
 
-  //write query to retreive cart contents, inner join
-  //name of product, product id, quantity
-
   if ($errormessage !="") {
   echo $errormessage;
 }
@@ -15,13 +12,13 @@
       
       <?php
 
-        $query = sprintf("select * from cart where session_id='".session_id().);
+        $query = sprintf("select * from cart where session_id=.session_id(). join on products");
 
         $result = mysql_query($query, $link);
 
         if ($result) {
          while($row = mysql_fetch_array($result)) {
-          echo "Product Name: <input type='text' name='snuggie' value='3'>";
+          echo "Product Name: <input type='text' name='product_name' value='2'>";
         }
 
         }
@@ -30,10 +27,10 @@
         }
       ?>
 
-        Vape: <input type="text" name="product_2" value="1">
+        Quantity: <input type="text" name="product_2" value="1">
 
-       <input type="update_cart" value="Update Cart">
-       <input type="checkout" value="Checkout">
+       <input type="submit" value="Update Cart">
+       <input type="submit" value="Checkout">
     </form>
 
 <?php

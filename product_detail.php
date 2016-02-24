@@ -15,7 +15,7 @@
 
 		while ($row = mysqli_fetch_assoc($result)) {
       
-    echo "<input type='text' name='snuggie' size='3'>";
+    echo "<input type='text' name='product_name' size='3'>";
 
 		echo $row["product_name"] . "<br />";
 		echo "<img src='images/" . $row["image"] . "'><br /><br />";
@@ -31,19 +31,19 @@
     <script>
       $(document).ready(function() {
         $('.checkout_form').css('border','1px solid blue');
-        $('#itemQuantity').keyup(function() {
-          console.log("itemQuantity is" + $('#itemQuantity').val())
+        $('#item').keyup(function() {
+          console.log("item is" + $('#item').val())
           $.ajax({
             url: 'product_quantity.php',
-            data: {'itemQuantity': $('#itemQuantity').val()},
+            data: {'item': $('#item').val()},
             method: 'POST',
             dataType: 'json',
 
             success: function(data) {
               if (data.success==true) {
-                $('#itemQuantity_error').html('');
+                $('#item_error').html('');
               }else {
-                $('#itemQuantity_error').html('Please enter an amount');
+                $('#item_error').html('Please enter an amount');
               }         
               
               
